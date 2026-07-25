@@ -1,0 +1,39 @@
+Models:
+- OLS
+- Boosting
+- Multi-Layer Perception
+- Experiment with predicting direction first and then regressing value... 
+
+
+Data To get:
+- South Africa:
+    - Country risk spread
+    - Repo Rate (SARB interest rate)
+    - SA 2Y yield
+    - Latest GDP
+- US/Global:
+    - Fed funds (US Interest rate)
+    - US 2Y yield
+    - VIX (Global risk)
+    - DXY (Dollar strength)
+- Commodities
+    - gold
+    - platinum
+    - iron ore
+    - coal
+    - brent oil
+- USD/ZAR
+    - Current Exchange Rate
+    - 1 week, 1 month, 3 month return
+    - 1 month volatility
+
+
+Predictors:
+- SA Minerals: Gold, platinum, coal, iron ore, oil --> ZAR is considered a commidity currency
+- Interest difference
+- SA 2Y yield - US 2Y yield (2 Year government bond yield) --> EDA Should compare this with interest
+(- GDP --> On the rand paper, sa gdp/foreign gdp) - Left out due to lag
+- Country risk spread
+- VIX Global risk assessment --> ZAR Risk sensitive emerging market currency
+- DXY Dollar strength --> Basically covers things happening to the dollar
+- Momentum in ZAR --> See

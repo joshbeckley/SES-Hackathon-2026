@@ -4,3 +4,5 @@ __pycache__/
 .env
 data/*.csv
 .venv/
+data/raw
+data/manual

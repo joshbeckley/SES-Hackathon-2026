@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testing-validation"
+version = "0.1.0"
+description = "Data fetching, modelling, and validation utilities for the SES Hackathon 2026."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "econdatapy>=0.1.0,<0.2",
+    "numpy>=2.0,<3",
+    "pandas>=2.2,<4",
+    "scikit-learn>=1.6,<2",
+]
+
+[project.optional-dependencies]
+notebooks = [
+    "fredapi>=0.5,<0.6",
+    "ipykernel>=6,<8",
+    "python-dotenv>=1,<2",
+    "yfinance>=0.2,<2",
+]
+dev = [
+    "pytest>=8,<10",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src", "src.*"]

@@ -14,7 +14,7 @@ def fit_cv_timeseries_model(model: any, X: pd.DataFrame, y: pd.DataFrame):
         y: The response variable
     
     Returns:
-        mean_rmse: int
+        mean_rmse: float
     """
     tscv = TimeSeriesSplit()
     all_rmses = []
@@ -31,4 +31,6 @@ def fit_cv_timeseries_model(model: any, X: pd.DataFrame, y: pd.DataFrame):
 
         print(f"Fold {i}, rmse: {rmse}")
 
-    print(np.mean(all_rmses))
+    mean_rmse = np.mean(all_rmses)
+    print(mean_rmse)
+    return mean_rmse

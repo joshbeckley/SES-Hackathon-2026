@@ -63,6 +63,7 @@ nbformat==5.10.4
 nest-asyncio2==1.7.2
 notebook==7.6.1
 notebook_shim==0.2.4
+nbconvert==7.17.1
 numpy==2.5.1
 packaging==26.2
 pandas==3.0.5
@@ -102,6 +103,7 @@ statsmodels==0.14.6
 terminado==0.18.1
 tinycss2==1.5.1
 tornado==6.5.7
+torch==2.13.0
 traitlets==5.15.1
 typing_extensions==4.16.0
 tzdata==2026.3

@@ -6,3 +6,4 @@ data/*.csv
 .venv/
 data/raw
 data/manual
+.ipynb_checkpoints/

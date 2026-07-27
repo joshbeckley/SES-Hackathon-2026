@@ -1,5 +1,4 @@
 from datetime import datetime
-import pandas as pd
 
 def name_model(name: str) -> str:
     """

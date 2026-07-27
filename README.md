@@ -23,3 +23,8 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+Run this to import src:
+```bash
+pip install -e .
+```

@@ -32,5 +32,6 @@ def fit_cv_timeseries_model(model: any, X: pd.DataFrame, y: pd.DataFrame):
         print(f"Fold {i}, rmse: {rmse}")
 
     mean_rmse = np.mean(all_rmses)
-    print(mean_rmse)
+    print(f"RMSEs over all splits: {all_rmses}")
+    print(f"Mean RMSE over all folds: {mean_rmse}")
     return mean_rmse
